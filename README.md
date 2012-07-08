@@ -18,7 +18,7 @@ Then, update the Alfred Reflecticle extension to use
 
 as the command.
 
-[how it should look in alfred](https://img.skitch.com/20120708-xegs2q2869iqnks1seip4hy4ut.png)
+![screenshot of how it should look in alfred](https://img.skitch.com/20120708-xegs2q2869iqnks1seip4hy4ut.png "how it should look in alfred")
 
 I'd love to automate the install but that's beyond my Xcode knowledge at this
 time.  Please contact me/issue a pull request if you can help in this area.
