@@ -10,6 +10,8 @@
 		11B6EC9015A800EB00A988C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B6EC8F15A800EB00A988C6 /* Foundation.framework */; };
 		11B6EC9315A800EB00A988C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B6EC9215A800EB00A988C6 /* main.m */; };
 		11B6EC9715A800EB00A988C6 /* alfred_reflecticle_extension.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11B6EC9615A800EB00A988C6 /* alfred_reflecticle_extension.1 */; };
+		11B6EC9F15A8010500A988C6 /* Reflecticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B6EC9E15A8010500A988C6 /* Reflecticle.m */; };
+		11B6ECC415A8DBC200A988C6 /* alfred_reflecticle_extension in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11B6EC8B15A800EB00A988C6 /* alfred_reflecticle_extension */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,6 +21,7 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				11B6ECC415A8DBC200A988C6 /* alfred_reflecticle_extension in CopyFiles */,
 				11B6EC9715A800EB00A988C6 /* alfred_reflecticle_extension.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
@@ -29,8 +32,10 @@
 		11B6EC8B15A800EB00A988C6 /* alfred_reflecticle_extension */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = alfred_reflecticle_extension; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B6EC8F15A800EB00A988C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11B6EC9215A800EB00A988C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		11B6EC9515A800EB00A988C6 /* alfred_reflecticle_extension-Prefix.pch */ = {isa = PBXFileReference; path = "alfred_reflecticle_extension-Prefix.pch"; sourceTree = "<group>"; };
+		11B6EC9515A800EB00A988C6 /* alfred_reflecticle_extension-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "alfred_reflecticle_extension-Prefix.pch"; sourceTree = "<group>"; };
 		11B6EC9615A800EB00A988C6 /* alfred_reflecticle_extension.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = alfred_reflecticle_extension.1; sourceTree = "<group>"; };
+		11B6EC9D15A8010500A988C6 /* Reflecticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reflecticle.h; sourceTree = "<group>"; };
+		11B6EC9E15A8010500A988C6 /* Reflecticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reflecticle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +78,8 @@
 		11B6EC9115A800EB00A988C6 /* alfred_reflecticle_extension */ = {
 			isa = PBXGroup;
 			children = (
+				11B6EC9D15A8010500A988C6 /* Reflecticle.h */,
+				11B6EC9E15A8010500A988C6 /* Reflecticle.m */,
 				11B6EC9215A800EB00A988C6 /* main.m */,
 				11B6EC9615A800EB00A988C6 /* alfred_reflecticle_extension.1 */,
 				11B6EC9415A800EB00A988C6 /* Supporting Files */,
@@ -140,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11B6EC9315A800EB00A988C6 /* main.m in Sources */,
+				11B6EC9F15A8010500A988C6 /* Reflecticle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +178,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -190,6 +199,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -199,6 +209,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "alfred_reflecticle_extension/alfred_reflecticle_extension-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -208,6 +219,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "alfred_reflecticle_extension/alfred_reflecticle_extension-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -230,6 +242,7 @@
 				11B6EC9C15A800EB00A988C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

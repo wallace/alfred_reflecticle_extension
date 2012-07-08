@@ -7,15 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Reflecticle.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
+        NSString *api_key = [Reflecticle api_key];
+        Reflecticle *reflecticle = [[Reflecticle alloc] init];
+        reflecticle._api_key = api_key;
+        [reflecticle log];
     }
     return 0;
 }
