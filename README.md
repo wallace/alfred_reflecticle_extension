@@ -12,11 +12,13 @@ are!
 It is complicated for the moment.  Download the project, build it, archive it,
 and grab the executable out of the archive and drop that in /usr/local/bin.
 
-Then, update the reflecticle extension to use 
+Then, update the Alfred Reflecticle extension to use 
 
     /usr/local/bin/alfred\_reflecticle\_extension {query}
 
 as the command.
+
+[how it should look in alfred](https://img.skitch.com/20120708-xegs2q2869iqnks1seip4hy4ut.png)
 
 I'd love to automate the install but that's beyond my Xcode knowledge at this
 time.  Please contact me/issue a pull request if you can help in this area.
