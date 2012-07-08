@@ -1,0 +1,19 @@
+# Mac OS X
+.DS_Store
+
+# vim
+*.swp
+
+# Xcode
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.xcuserdata
+build/
+project.xcworkspace/
+xcuserdata
+
+# Backup files
+*~.nib
