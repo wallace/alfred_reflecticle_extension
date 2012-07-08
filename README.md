@@ -3,6 +3,10 @@
 This is a command line Objective C app is modeled after [the ruby version of the
 same name](https://github.com/highgroove/alfred_reflecticle_extension).
 
+For whatever reason, possibly due to how RVM and interacts with Reflecticle
+shell extensions, I was not able to get the ruby version to work... so here we
+are!
+
 # Installation
 
 It is complicated for the moment.  Download the project, build it, archive it,
@@ -10,7 +14,7 @@ and grab the executable out of the archive and drop that in /usr/local/bin.
 
 Then, update the reflecticle extension to use 
 
-  /usr/local/bin/alfred\_reflecticle\_extension {query}
+    /usr/local/bin/alfred\_reflecticle\_extension {query}
 
 as the command.
 
@@ -19,7 +23,7 @@ time.  Please contact me/issue a pull request if you can help in this area.
 
 ### Usage
 
-  ./alfred_refleticle_extension <project name> <message>
+    ./alfred_refleticle_extension <project name> <message>
 
 ### TODO
 
