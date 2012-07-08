@@ -1,8 +1,8 @@
 ### Alfred Reflecticle Extension, Objective C style.
 
-This is a command line Objective C app is modeled after [the ruby version of the
-same name](https://github.com/highgroove/alfred_reflecticle_extension).  It lets
-you post updates to [Reflecticle](http://reflecticle.com) from the command line.
+This command line Objective C app is modeled after [the ruby version of the same
+name](https://github.com/highgroove/alfred_reflecticle_extension).  It lets you
+post updates to [Reflecticle](http://reflecticle.com) from the command line.
 
 For whatever reason, possibly due to how RVM and interacts with Reflecticle
 shell extensions, I was not able to get the ruby version to work... so here we
@@ -37,6 +37,7 @@ time.  Please contact me/issue a pull request if you can help in this area.
  0. Add tests
  1. Implement error handling
  2. Implement growl notifications to show you the most recent reflecticle updates.
+ 3. Automate the installation of the command line utility
 
 ###  License
  Copyright (c) 2012 Jonathan R. Wallace
