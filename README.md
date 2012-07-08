@@ -1,13 +1,18 @@
 ### Alfred Reflecticle Extension, Objective C style.
 
 This is a command line Objective C app is modeled after [the ruby version of the
-same name](https://github.com/highgroove/alfred_reflecticle_extension).
+same name](https://github.com/highgroove/alfred_reflecticle_extension).  It lets
+you post updates to [Reflecticle](http://reflecticle.com) from the command line.
 
 For whatever reason, possibly due to how RVM and interacts with Reflecticle
 shell extensions, I was not able to get the ruby version to work... so here we
 are!
 
 # Installation
+
+Setup your API Key:
+
+    $ echo 'API_KEY' > ~/.reflecticle
 
 It is complicated for the moment.  Download the project, build it, archive it,
 and grab the executable out of the archive and drop that in /usr/local/bin.
