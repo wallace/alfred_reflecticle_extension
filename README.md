@@ -14,8 +14,10 @@ Setup your API Key:
 
     $ echo 'API_KEY' > ~/.reflecticle
 
-It is complicated for the moment.  Download the project, build it, archive it,
-and grab the executable out of the archive and drop that in /usr/local/bin.
+The rest of installation is complicated for the moment.  Download the project,
+archive it with Xcode, distribute the app in Organizer, choose "Save Built
+Products", and grab the executable out of the exported directory (found in
+usr/share/man/man1/) and copy that to /usr/local/bin.
 
 Then, update the Alfred Reflecticle extension to use 
 
