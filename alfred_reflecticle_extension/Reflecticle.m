@@ -68,15 +68,15 @@
         // Loop through regexes of project name
         NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:project_name options:NSRegularExpressionCaseInsensitive error:NULL];
         
-        NSArray *matches = [regex matchesInString:update_message
+        NSTextCheckingResult *match = [regex firstMatchInString:update_message
                                           options:NSRegularExpressionCaseInsensitive
                                             range:NSMakeRange(0, [update_message length])];
         
-        if ([matches count]) {
+        if (match.range.length != 0) {
             // remove regex from string to get the message
             NSString *modifiedString = [regex stringByReplacingMatchesInString:update_message
                                                                        options:NSRegularExpressionCaseInsensitive 
-                                                                         range:NSMakeRange(0, [update_message length]) withTemplate:@""];
+                                                                         range:NSMakeRange(0, match.range.length) withTemplate:@""];
             
             // remove leading and trailing spaces
             NSString *message = [modifiedString stringByTrimmingCharactersInSet:
