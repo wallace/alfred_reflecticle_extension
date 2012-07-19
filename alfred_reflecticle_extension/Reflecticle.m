@@ -7,6 +7,7 @@
 //
 
 #import "Reflecticle.h"
+#import "Location.h"
 
 @implementation Reflecticle
 
@@ -55,9 +56,9 @@
                                                  error:&error];
 }
 
-- (void)log {
+- (void)log:(CLLocation *)location {
     NSString *update_message = [Reflecticle parse_command_line];
-    
+        
     // Get project names via JSON query
     [self projects];
     
@@ -95,7 +96,7 @@
                                                                                                    kCFStringEncodingUTF8);
             
             // Build the GET request URI
-            NSString *message_uri = [NSString stringWithFormat:@"https://www.reflecticle.com/api/activities/create.json?api_key=%@&project_id=%@&description=%@", _api_key, project_id, escapedString];
+            NSString *message_uri = [NSString stringWithFormat:@"https://www.reflecticle.com/api/activities/create.json?api_key=%@&project_id=%@&description=%@&latitude=%f&longitude=%f&location_accuracy=%f", _api_key, project_id, escapedString, location.coordinate.latitude, location.coordinate.longitude, location.horizontalAccuracy];
             
             NSURLRequest *theRequest=[NSURLRequest requestWithURL:[NSURL URLWithString:message_uri]
                                                       cachePolicy:NSURLRequestUseProtocolCachePolicy
@@ -104,6 +105,9 @@
             [NSURLConnection sendSynchronousRequest:theRequest returningResponse:&response error:nil];
         }
     }
+    
+    // Needed unless you want to DoS Reflecticle
+    exit(0);
 }
 
 @end
