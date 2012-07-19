@@ -12,6 +12,9 @@
 		11B6EC9715A800EB00A988C6 /* alfred_reflecticle_extension.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11B6EC9615A800EB00A988C6 /* alfred_reflecticle_extension.1 */; };
 		11B6EC9F15A8010500A988C6 /* Reflecticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B6EC9E15A8010500A988C6 /* Reflecticle.m */; };
 		11B6ECC415A8DBC200A988C6 /* alfred_reflecticle_extension in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11B6EC8B15A800EB00A988C6 /* alfred_reflecticle_extension */; };
+		CE9F3EB215B742DA00C8DA22 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9F3EB115B742DA00C8DA22 /* Location.m */; };
+		CE9F3EC115B7524C00C8DA22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9F3EC015B7524C00C8DA22 /* CoreLocation.framework */; };
+		CE9F3EC315B75A6600C8DA22 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9F3EC215B75A6600C8DA22 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +39,10 @@
 		11B6EC9615A800EB00A988C6 /* alfred_reflecticle_extension.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = alfred_reflecticle_extension.1; sourceTree = "<group>"; };
 		11B6EC9D15A8010500A988C6 /* Reflecticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reflecticle.h; sourceTree = "<group>"; };
 		11B6EC9E15A8010500A988C6 /* Reflecticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reflecticle.m; sourceTree = "<group>"; };
+		CE9F3EB015B742DA00C8DA22 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		CE9F3EB115B742DA00C8DA22 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		CE9F3EC015B7524C00C8DA22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = ../../../../System/Library/Frameworks/CoreLocation.framework; sourceTree = "<group>"; };
+		CE9F3EC215B75A6600C8DA22 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = ../../../../System/Library/Frameworks/Cocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				11B6EC9015A800EB00A988C6 /* Foundation.framework in Frameworks */,
+				CE9F3EC115B7524C00C8DA22 /* CoreLocation.framework in Frameworks */,
+				CE9F3EC315B75A6600C8DA22 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +79,8 @@
 		11B6EC8E15A800EB00A988C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE9F3EC215B75A6600C8DA22 /* Cocoa.framework */,
+				CE9F3EC015B7524C00C8DA22 /* CoreLocation.framework */,
 				11B6EC8F15A800EB00A988C6 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -78,6 +89,8 @@
 		11B6EC9115A800EB00A988C6 /* alfred_reflecticle_extension */ = {
 			isa = PBXGroup;
 			children = (
+				CE9F3EB015B742DA00C8DA22 /* Location.h */,
+				CE9F3EB115B742DA00C8DA22 /* Location.m */,
 				11B6EC9D15A8010500A988C6 /* Reflecticle.h */,
 				11B6EC9E15A8010500A988C6 /* Reflecticle.m */,
 				11B6EC9215A800EB00A988C6 /* main.m */,
@@ -148,6 +161,7 @@
 			files = (
 				11B6EC9315A800EB00A988C6 /* main.m in Sources */,
 				11B6EC9F15A8010500A988C6 /* Reflecticle.m in Sources */,
+				CE9F3EB215B742DA00C8DA22 /* Location.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,16 +8,20 @@
 
 #import <Foundation/Foundation.h>
 #import "Reflecticle.h"
+#import "Location.h"
+#import <CoreLocation/CoreLocation.h>
+#import <Cocoa/Cocoa.h>
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        NSString *api_key = [Reflecticle api_key];
-        Reflecticle *reflecticle = [[Reflecticle alloc] init];
-        reflecticle._api_key = api_key;
-        [reflecticle log];
+        Location *location = [[Location alloc] init];
+        [location start];
+
+        
+        NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+        [runLoop run];
     }
     return 0;
 }
-

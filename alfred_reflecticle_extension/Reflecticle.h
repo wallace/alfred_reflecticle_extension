@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 MH Solutions LLC. All rights reserved.
 //
 
+#import <CoreLocation/CoreLocation.h>
 #import <Foundation/Foundation.h>
 
 @interface Reflecticle : NSObject
@@ -13,7 +14,7 @@
 @property NSString *_api_key;
 @property NSArray *_projects;
 
-- (void)log;
+- (void)log:(CLLocation *)location;
 - (void)projects;
 + (NSString *)parse_command_line;
 + (NSString *)api_key;
