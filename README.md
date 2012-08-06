@@ -19,13 +19,17 @@ archive it with Xcode, distribute the app in Organizer, choose "Save Built
 Products", and grab the executable out of the exported directory (found in
 usr/share/man/man1/) and copy that to /usr/local/bin.
 
-Then, update the Alfred Reflecticle extension to use 
+Then, add a "Shell Script" extension with the command:
 
-    /usr/local/bin/alfred\_reflecticle\_extension {query}
+    /usr/local/bin/alfred_reflecticle_extension "{query}"
 
 as the command.
 
-![screenshot of how it should look in alfred](https://img.skitch.com/20120708-xegs2q2869iqnks1seip4hy4ut.png "how it should look in alfred")
+![screenshot of how it should look in alfred](https://img.skitch.com/20120806-nebdbeedg771d34wfksdjh2sg1.jpg "how it should look in alfred")
+
+Finally, adjust the advanced options so that only "Double Quotes" are escaped:
+
+![advanced options](http://img.skitch.com/20120806-tc49fnd5efa34sj12eaidqcs11.jpg "advanced options")
 
 I'd love to automate the install but that's beyond my Xcode knowledge at this
 time.  Please contact me/issue a pull request if you can help in this area.
