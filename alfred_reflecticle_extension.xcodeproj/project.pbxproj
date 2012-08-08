@@ -10,11 +10,14 @@
 		11B6EC9015A800EB00A988C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B6EC8F15A800EB00A988C6 /* Foundation.framework */; };
 		11B6EC9315A800EB00A988C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B6EC9215A800EB00A988C6 /* main.m */; };
 		11B6EC9715A800EB00A988C6 /* alfred_reflecticle_extension.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11B6EC9615A800EB00A988C6 /* alfred_reflecticle_extension.1 */; };
-		11B6EC9F15A8010500A988C6 /* Reflecticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B6EC9E15A8010500A988C6 /* Reflecticle.m */; };
 		11B6ECC415A8DBC200A988C6 /* alfred_reflecticle_extension in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11B6EC8B15A800EB00A988C6 /* alfred_reflecticle_extension */; };
-		CE9F3EB215B742DA00C8DA22 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9F3EB115B742DA00C8DA22 /* Location.m */; };
 		CE9F3EC115B7524C00C8DA22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9F3EC015B7524C00C8DA22 /* CoreLocation.framework */; };
 		CE9F3EC315B75A6600C8DA22 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9F3EC215B75A6600C8DA22 /* Cocoa.framework */; };
+		F1C059E31614BDDD003450BD /* ReflecticleClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C059E21614BDDD003450BD /* ReflecticleClient.m */; };
+		F1C059E71614BE6F003450BD /* ReflecticleProject.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C059E61614BE6F003450BD /* ReflecticleProject.m */; };
+		F1C059EA1614C116003450BD /* NSDictionary+QueryString.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C059E91614C116003450BD /* NSDictionary+QueryString.m */; };
+		F1C059ED1614C4A3003450BD /* ReflecticleActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C059EC1614C4A3003450BD /* ReflecticleActivity.m */; };
+		F1C059F01614C77F003450BD /* AlfredReflecticleExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C059EF1614C77F003450BD /* AlfredReflecticleExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,12 +40,18 @@
 		11B6EC9215A800EB00A988C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11B6EC9515A800EB00A988C6 /* alfred_reflecticle_extension-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "alfred_reflecticle_extension-Prefix.pch"; sourceTree = "<group>"; };
 		11B6EC9615A800EB00A988C6 /* alfred_reflecticle_extension.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = alfred_reflecticle_extension.1; sourceTree = "<group>"; };
-		11B6EC9D15A8010500A988C6 /* Reflecticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reflecticle.h; sourceTree = "<group>"; };
-		11B6EC9E15A8010500A988C6 /* Reflecticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reflecticle.m; sourceTree = "<group>"; };
-		CE9F3EB015B742DA00C8DA22 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
-		CE9F3EB115B742DA00C8DA22 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		CE9F3EC015B7524C00C8DA22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = ../../../../System/Library/Frameworks/CoreLocation.framework; sourceTree = "<group>"; };
 		CE9F3EC215B75A6600C8DA22 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = ../../../../System/Library/Frameworks/Cocoa.framework; sourceTree = "<group>"; };
+		F1C059E11614BDDD003450BD /* ReflecticleClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflecticleClient.h; sourceTree = "<group>"; };
+		F1C059E21614BDDD003450BD /* ReflecticleClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflecticleClient.m; sourceTree = "<group>"; };
+		F1C059E51614BE6F003450BD /* ReflecticleProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflecticleProject.h; sourceTree = "<group>"; };
+		F1C059E61614BE6F003450BD /* ReflecticleProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflecticleProject.m; sourceTree = "<group>"; };
+		F1C059E81614C116003450BD /* NSDictionary+QueryString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+QueryString.h"; sourceTree = "<group>"; };
+		F1C059E91614C116003450BD /* NSDictionary+QueryString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+QueryString.m"; sourceTree = "<group>"; };
+		F1C059EB1614C4A3003450BD /* ReflecticleActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflecticleActivity.h; sourceTree = "<group>"; };
+		F1C059EC1614C4A3003450BD /* ReflecticleActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflecticleActivity.m; sourceTree = "<group>"; };
+		F1C059EE1614C77F003450BD /* AlfredReflecticleExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlfredReflecticleExtension.h; sourceTree = "<group>"; };
+		F1C059EF1614C77F003450BD /* AlfredReflecticleExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlfredReflecticleExtension.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +98,16 @@
 		11B6EC9115A800EB00A988C6 /* alfred_reflecticle_extension */ = {
 			isa = PBXGroup;
 			children = (
-				CE9F3EB015B742DA00C8DA22 /* Location.h */,
-				CE9F3EB115B742DA00C8DA22 /* Location.m */,
-				11B6EC9D15A8010500A988C6 /* Reflecticle.h */,
-				11B6EC9E15A8010500A988C6 /* Reflecticle.m */,
+				F1C059E81614C116003450BD /* NSDictionary+QueryString.h */,
+				F1C059E91614C116003450BD /* NSDictionary+QueryString.m */,
+				F1C059EE1614C77F003450BD /* AlfredReflecticleExtension.h */,
+				F1C059EF1614C77F003450BD /* AlfredReflecticleExtension.m */,
+				F1C059E11614BDDD003450BD /* ReflecticleClient.h */,
+				F1C059E21614BDDD003450BD /* ReflecticleClient.m */,
+				F1C059E51614BE6F003450BD /* ReflecticleProject.h */,
+				F1C059E61614BE6F003450BD /* ReflecticleProject.m */,
+				F1C059EB1614C4A3003450BD /* ReflecticleActivity.h */,
+				F1C059EC1614C4A3003450BD /* ReflecticleActivity.m */,
 				11B6EC9215A800EB00A988C6 /* main.m */,
 				11B6EC9615A800EB00A988C6 /* alfred_reflecticle_extension.1 */,
 				11B6EC9415A800EB00A988C6 /* Supporting Files */,
@@ -160,8 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				11B6EC9315A800EB00A988C6 /* main.m in Sources */,
-				11B6EC9F15A8010500A988C6 /* Reflecticle.m in Sources */,
-				CE9F3EB215B742DA00C8DA22 /* Location.m in Sources */,
+				F1C059E31614BDDD003450BD /* ReflecticleClient.m in Sources */,
+				F1C059E71614BE6F003450BD /* ReflecticleProject.m in Sources */,
+				F1C059EA1614C116003450BD /* NSDictionary+QueryString.m in Sources */,
+				F1C059ED1614C4A3003450BD /* ReflecticleActivity.m in Sources */,
+				F1C059F01614C77F003450BD /* AlfredReflecticleExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +192,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -191,7 +210,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx10.7;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -202,6 +222,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -212,7 +233,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx10.7;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

@@ -6,22 +6,13 @@
 //  Copyright (c) 2012 MH Solutions LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "Reflecticle.h"
-#import "Location.h"
-#import <CoreLocation/CoreLocation.h>
-#import <Cocoa/Cocoa.h>
+#import "AlfredReflecticleExtension.h"
 
 int main(int argc, const char * argv[])
 {
-
     @autoreleasepool {
-        Location *location = [[Location alloc] init];
-        [location start];
-
-        
-        NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
-        [runLoop run];
+        [[AlfredReflecticleExtension sharedInstance] run];
     }
+    
     return 0;
 }
