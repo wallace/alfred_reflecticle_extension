@@ -35,9 +35,11 @@
     NSArray *projects = [[ReflecticleClient sharedClient] projects:&error];
     if (projects) {
         _activity = [[ReflecticleActivity alloc] init];
-        _activity.projectId = [[self findProjectByName:projects name:[self projectNameFromCommandLine]] identifier];
-        _activity.description = [self descriptionFromCommandLine];
-                
+        
+        ReflecticleProject *project = [self findProjectByName:projects];
+        _activity.projectId = [project identifier];
+        _activity.description = [self descriptionFromCommandLine:project];
+        
         // Attempt to grab the user's location
         if ([CLLocationManager locationServicesEnabled]) {
             [_locationManager stopUpdatingLocation];
@@ -58,21 +60,19 @@
     }
 }
 
-- (NSString *)projectNameFromCommandLine {
-    return [[self alfredQueryFromCommandLine] substringToIndex:[[self alfredQueryFromCommandLine] rangeOfString:@" "].location];
-}
-
-- (NSString *)descriptionFromCommandLine {
-    return [[self alfredQueryFromCommandLine] substringFromIndex:[[self alfredQueryFromCommandLine] rangeOfString:@" "].location + 1];
+- (NSString *)descriptionFromCommandLine:(ReflecticleProject *)project {
+    return [[self alfredQueryFromCommandLine] substringFromIndex:project.name.length];
 }
 
 - (NSString *)alfredQueryFromCommandLine {
     return [[[NSProcessInfo processInfo] arguments] objectAtIndex:1];
 }
 
-- (ReflecticleProject *)findProjectByName:(NSArray *)projects name:(NSString *)name {
+- (ReflecticleProject *)findProjectByName:(NSArray *)projects {
+    NSString *query = [self alfredQueryFromCommandLine];
+    
     for (ReflecticleProject *project in projects) {
-        if ([project.name caseInsensitiveCompare:name] == NSOrderedSame) {
+        if ([project.name caseInsensitiveCompare:[query substringToIndex:project.name.length]] == NSOrderedSame) {
             return project;
         }
     }
