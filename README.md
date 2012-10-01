@@ -14,10 +14,12 @@ Setup your API Key:
 
     $ echo 'API_KEY' > ~/.reflecticle
 
-The rest of installation is complicated for the moment.  Download the project,
-archive it with Xcode, distribute the app in Organizer, choose "Save Built
-Products", and grab the executable out of the exported directory (found in
-usr/share/man/man1/) and copy that to /usr/local/bin.
+Download the [latest
+binary](https://github.com/wallace/alfred_reflecticle_extension/downloads). The
+ZIP file will contain one file: the executable `alfred_reflecticle_extension`.
+
+Move the executable to a place in your `$PATH`; for instance, `/usr/local/bin`
+or `~/bin` (if you have setup the latter to be in your `$PATH`).
 
 Then, add a "Shell Script" extension with the command:
 
@@ -31,21 +33,21 @@ Finally, adjust the advanced options so that only "Double Quotes" are escaped:
 
 ![advanced options](http://img.skitch.com/20120806-tc49fnd5efa34sj12eaidqcs11.jpg "advanced options")
 
-I'd love to automate the install but that's beyond my Xcode knowledge at this
-time.  Please contact me/issue a pull request if you can help in this area.
+An automated installer would be really nice: if you have knowledge about how to
+make this work, please submit a pull request.
 
 ### Usage
 
-    ./alfred_refleticle_extension <project name> <message>
+    ./alfred_refleticle_extension "<project name> <message>"
 
 ### TODO
 
  0. Add tests
  1. Implement error handling
- 2. Implement growl notifications to show you the most recent reflecticle updates.
- 3. Automate the installation of the command line utility
+ 2. Automate the installation of the command line utility
 
 ###  License
+
  Copyright (c) 2012 Jonathan R. Wallace
 
  Permission is hereby granted, free of charge, to any person obtaining a copy of

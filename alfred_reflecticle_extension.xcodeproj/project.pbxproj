@@ -10,7 +10,6 @@
 		11B6EC9015A800EB00A988C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B6EC8F15A800EB00A988C6 /* Foundation.framework */; };
 		11B6EC9315A800EB00A988C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B6EC9215A800EB00A988C6 /* main.m */; };
 		11B6EC9715A800EB00A988C6 /* alfred_reflecticle_extension.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11B6EC9615A800EB00A988C6 /* alfred_reflecticle_extension.1 */; };
-		11B6ECC415A8DBC200A988C6 /* alfred_reflecticle_extension in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11B6EC8B15A800EB00A988C6 /* alfred_reflecticle_extension */; };
 		CE9F3EC115B7524C00C8DA22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9F3EC015B7524C00C8DA22 /* CoreLocation.framework */; };
 		CE9F3EC315B75A6600C8DA22 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9F3EC215B75A6600C8DA22 /* Cocoa.framework */; };
 		F1C059E31614BDDD003450BD /* ReflecticleClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C059E21614BDDD003450BD /* ReflecticleClient.m */; };
@@ -27,7 +26,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				11B6ECC415A8DBC200A988C6 /* alfred_reflecticle_extension in CopyFiles */,
 				11B6EC9715A800EB00A988C6 /* alfred_reflecticle_extension.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
@@ -193,7 +191,6 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -212,7 +209,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx10.7;
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -223,7 +219,6 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -235,7 +230,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx10.7;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -245,7 +239,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "alfred_reflecticle_extension/alfred_reflecticle_extension-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -255,7 +248,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "alfred_reflecticle_extension/alfred_reflecticle_extension-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
