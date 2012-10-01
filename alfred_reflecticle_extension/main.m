@@ -3,7 +3,6 @@
 //  alfred_reflecticle_extension
 //
 //  Created by Jonathan Wallace on 7/7/12.
-//  Copyright (c) 2012 MH Solutions LLC. All rights reserved.
 //
 
 #import "AlfredReflecticleExtension.h"
