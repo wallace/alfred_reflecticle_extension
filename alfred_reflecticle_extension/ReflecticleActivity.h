@@ -9,6 +9,8 @@
 
 @interface ReflecticleActivity : NSObject
 
+- (BOOL)hasLocation;
+
 @property (nonatomic, copy) NSNumber *identifier;
 @property (nonatomic, copy) NSNumber *projectId;
 @property (nonatomic, copy) NSString *description;

@@ -65,12 +65,16 @@
 }
 
 - (BOOL)log:(ReflecticleActivity *)activity error:(NSError **)error {
-    NSDictionary *params = @{
-        @"project_id" : activity.projectId,
-        @"description" : activity.description,
-        @"latitude" : activity.latitude,
-        @"longitude" : activity.longitude
-    };
+    // TODO: This might better belong on ReflecticleActivity itself?
+    NSMutableDictionary *params =
+        [NSMutableDictionary dictionaryWithObjectsAndKeys:activity.projectId, @"project_id",
+            activity.description, @"description",
+            nil];
+    
+    if ([activity hasLocation]) {
+        [params setObject:activity.latitude forKey:@"latitude"];
+        [params setObject:activity.longitude forKey:@"longitude"];
+    }
     
     NSData *data = [NSData dataWithContentsOfURL:[self reflecticleUrl:@"/api/activities/create.json" parameters:params] options:0 error:error];
     if (data) {

@@ -9,4 +9,8 @@
 
 @implementation ReflecticleActivity
 
+- (BOOL)hasLocation {
+    return _latitude && _longitude;
+}
+
 @end
