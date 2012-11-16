@@ -52,6 +52,7 @@
             [_locationManager startUpdatingLocation];
             [runLoop run];
         } else {
+            NSLog(@"Logging activity without location: %@", _activity.description);
             [self logActivity];
         }
     } else {
@@ -61,7 +62,7 @@
 }
 
 - (NSString *)descriptionFromCommandLine:(ReflecticleProject *)project {
-    return [[self alfredQueryFromCommandLine] substringFromIndex:project.name.length];
+    return [[self alfredQueryFromCommandLine] substringFromIndex:project.name.length + 1];
 }
 
 - (NSString *)alfredQueryFromCommandLine {
@@ -88,6 +89,7 @@
         _activity.latitude = @(newLocation.coordinate.latitude);
         _activity.longitude = @(newLocation.coordinate.longitude);
         
+        NSLog(@"Logging activity with location: %@", _activity.description);
         [self logActivity];
     } else {
         NSLog(@"Found location but was not new");

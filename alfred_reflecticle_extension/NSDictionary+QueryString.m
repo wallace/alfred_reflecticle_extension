@@ -6,6 +6,7 @@
 //
 
 #import "NSDictionary+QueryString.h"
+#import "NSString+UrlEncoded.h"
 
 @implementation NSDictionary (QueryString)
 
@@ -21,7 +22,9 @@
             stringValue = value;
         }
         
-        [parts addObject:[NSString stringWithFormat:@"%@=%@", [key stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], [stringValue stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
+        [parts addObject:[NSString stringWithFormat:@"%@=%@",
+                          [key urlEncoded],
+                          [stringValue urlEncoded]]];
     }
     
     return [parts componentsJoinedByString:@"&"];

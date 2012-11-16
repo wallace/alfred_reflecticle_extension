@@ -88,7 +88,10 @@
     NSMutableDictionary *parametersWithApiKey = [NSMutableDictionary dictionaryWithDictionary:parameters];
     [parametersWithApiKey setObject:_apiKey forKey:@"api_key"];
         
-    return [NSURL URLWithString:[NSString stringWithFormat:@"https://www.reflecticle.com%@?%@", path, [parametersWithApiKey queryString]]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://www.reflecticle.com%@?%@", path, [parametersWithApiKey queryString]]];
+    NSLog(@"Reflecticle URL: %@", url);
+    
+    return url;
 }
 
 @end

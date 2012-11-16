@@ -12,6 +12,7 @@
 		11B6EC9715A800EB00A988C6 /* alfred_reflecticle_extension.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11B6EC9615A800EB00A988C6 /* alfred_reflecticle_extension.1 */; };
 		CE9F3EC115B7524C00C8DA22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9F3EC015B7524C00C8DA22 /* CoreLocation.framework */; };
 		CE9F3EC315B75A6600C8DA22 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9F3EC215B75A6600C8DA22 /* Cocoa.framework */; };
+		F151503E1655DCE800E8E4D4 /* NSString+UrlEncoded.m in Sources */ = {isa = PBXBuildFile; fileRef = F151503D1655DCE800E8E4D4 /* NSString+UrlEncoded.m */; };
 		F1C059E31614BDDD003450BD /* ReflecticleClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C059E21614BDDD003450BD /* ReflecticleClient.m */; };
 		F1C059E71614BE6F003450BD /* ReflecticleProject.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C059E61614BE6F003450BD /* ReflecticleProject.m */; };
 		F1C059EA1614C116003450BD /* NSDictionary+QueryString.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C059E91614C116003450BD /* NSDictionary+QueryString.m */; };
@@ -40,6 +41,8 @@
 		11B6EC9615A800EB00A988C6 /* alfred_reflecticle_extension.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = alfred_reflecticle_extension.1; sourceTree = "<group>"; };
 		CE9F3EC015B7524C00C8DA22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = ../../../../System/Library/Frameworks/CoreLocation.framework; sourceTree = "<group>"; };
 		CE9F3EC215B75A6600C8DA22 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = ../../../../System/Library/Frameworks/Cocoa.framework; sourceTree = "<group>"; };
+		F151503C1655DCE800E8E4D4 /* NSString+UrlEncoded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UrlEncoded.h"; sourceTree = "<group>"; };
+		F151503D1655DCE800E8E4D4 /* NSString+UrlEncoded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UrlEncoded.m"; sourceTree = "<group>"; };
 		F1C059E11614BDDD003450BD /* ReflecticleClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflecticleClient.h; sourceTree = "<group>"; };
 		F1C059E21614BDDD003450BD /* ReflecticleClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflecticleClient.m; sourceTree = "<group>"; };
 		F1C059E51614BE6F003450BD /* ReflecticleProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflecticleProject.h; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 			children = (
 				F1C059E81614C116003450BD /* NSDictionary+QueryString.h */,
 				F1C059E91614C116003450BD /* NSDictionary+QueryString.m */,
+				F151503C1655DCE800E8E4D4 /* NSString+UrlEncoded.h */,
+				F151503D1655DCE800E8E4D4 /* NSString+UrlEncoded.m */,
 				F1C059EE1614C77F003450BD /* AlfredReflecticleExtension.h */,
 				F1C059EF1614C77F003450BD /* AlfredReflecticleExtension.m */,
 				F1C059E11614BDDD003450BD /* ReflecticleClient.h */,
@@ -178,6 +183,7 @@
 				F1C059EA1614C116003450BD /* NSDictionary+QueryString.m in Sources */,
 				F1C059ED1614C4A3003450BD /* ReflecticleActivity.m in Sources */,
 				F1C059F01614C77F003450BD /* AlfredReflecticleExtension.m in Sources */,
+				F151503E1655DCE800E8E4D4 /* NSString+UrlEncoded.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
