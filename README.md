@@ -36,6 +36,10 @@ Finally, adjust the advanced options so that "Double Quotes" and "Dollars" are e
 An automated installer would be really nice: if you have knowledge about how to
 make this work, please submit a pull request.
 
+Use it from Alfred to log your activities:
+
+![updating from alfred](http://cl.ly/image/251u1O111D19/Screen%20Shot%202012-11-15%20at%2021.50.19%20.png)
+
 ### Usage
 
     ./alfred_refleticle_extension "<project name> <message>"
