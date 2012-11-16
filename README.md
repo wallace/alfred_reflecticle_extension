@@ -40,7 +40,7 @@ Use it from Alfred to log your activities:
 
 ![updating from alfred](http://cl.ly/image/251u1O111D19/Screen%20Shot%202012-11-15%20at%2021.50.19%20.png)
 
-### Usage
+### Command Line Usage
 
     ./alfred_refleticle_extension "<project name> <message>"
 
