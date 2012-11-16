@@ -27,11 +27,11 @@ Then, add a "Shell Script" extension with the command:
 
 as the command.
 
-![screenshot of how it should look in alfred](https://img.skitch.com/20120806-nebdbeedg771d34wfksdjh2sg1.jpg "how it should look in alfred")
+![screenshot of how it should look in alfred](http://cl.ly/image/0I1z0Y3b442C/Alfred%20Preferences.jpg)
 
-Finally, adjust the advanced options so that only "Double Quotes" are escaped:
+Finally, adjust the advanced options so that "Double Quotes" and "Dollars" are escaped:
 
-![advanced options](http://img.skitch.com/20120806-tc49fnd5efa34sj12eaidqcs11.jpg "advanced options")
+![advanced options](http://cl.ly/image/0B1S3k013B3S/Alfred.jpg "advanced options")
 
 An automated installer would be really nice: if you have knowledge about how to
 make this work, please submit a pull request.
